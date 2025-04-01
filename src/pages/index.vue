@@ -325,19 +325,11 @@ video {
     padding-top: 120px;
   }
 
-  .second-text {
-    font-size: 14px; /* Slightly smaller for better readability on small screens */
-    padding-left: 15%; /* Relative padding instead of vh */
-    padding-right: 15%;
-}
+  .second-text{
+    font-size: 15px;
+    padding-left: 20vh;
+    padding-right: 20vh;
 
-/* Adjustments for very small screens */
-@media (max-width: 480px) {
-    .second-text {
-        font-size: 13px; /* Reduce font size for smaller screens */
-        padding-left: 13%;
-        padding-right: 13%;
-    }
-}
+  }
 }
 </style>

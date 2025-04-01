@@ -208,7 +208,7 @@ h1 {
   }
 
   .carousel-wrapper {
-    height: 120vh;
+    height: 90vh;
     padding-right: 0;
     padding-bottom: 190px;
     display: flex;
@@ -262,7 +262,7 @@ h1 {
 }
 
 .carousel-wrapper {
-  height: 110vh;
+  height: 90vh;
   padding-right: 0;
   padding-bottom: 190px;
   display: flex;
