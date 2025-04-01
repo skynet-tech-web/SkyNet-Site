@@ -1,35 +1,41 @@
 <script setup lang="ts">
+import linkedInImg from '@/assets/lingding.png';
+import whatsAppImg from '@/assets/wattsapp.png';
+import youtubeImg from '@/assets/youtube.png';
+import facebookImg from '@/assets/facebook.png';
+import instagramImg from '@/assets/instagram.png';
+
 interface SocialIcon {
   name: string;
   url: string;
-  image: string;
+  image: string; // Image paths are strings
 }
 
 const socialIcons: SocialIcon[] = [
   {
     name: 'LinkedIn',
     url: 'https://linkedin.com',
-    image: 'src/assets/lingding.png'
+    image: linkedInImg as string // ✅ Explicitly tell TypeScript it's a string
   },
   {
     name: 'WhatsApp',
     url: 'https://whatsapp.com',
-    image: 'src/assets/wattsapp.png'
+    image: whatsAppImg as string
   },
   {
     name: 'YouTube',
     url: 'https://youtube.com',
-    image: 'src/assets/youtube.png'
+    image: youtubeImg as string
   },
   {
     name: 'Facebook',
     url: 'https://facebook.com',
-    image: 'src/assets/facebook.png'
+    image: facebookImg as string
   },
   {
     name: 'Instagram',
     url: 'https://instagram.com',
-    image: 'src/assets/instagram.png'
+    image: instagramImg as string
   }
 ];
 </script>

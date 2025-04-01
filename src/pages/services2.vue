@@ -2,6 +2,7 @@
   import { Flame, Zap, Gift, Database, Coins, Stars } from 'lucide-vue-next'
   import FeatureCard from '@/components/custom/FeatureCard.vue'
   import { CheckIcon } from '@heroicons/vue/20/solid'
+  import scrollImg from '@/assets/scroll.png'; // Import image properly
 
   const shops = [
   {
@@ -187,7 +188,10 @@
         <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center relative">
           <div class="relative group">
             <div class="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-[30px] blur-2xl group-hover:blur-3xl transition-all duration-500" />
-            <div class="relative bg-[url('src/assets/scroll.png')] bg-contain bg-no-repeat bg-center w-full aspect-square rounded-[30px] border border-purple-500/20">
+            <div 
+                class="relative bg-contain bg-no-repeat bg-center w-full aspect-square rounded-[30px] border border-purple-500/20"
+                :style="{ backgroundImage: `url(${scrollImg})` }"
+              >
               <div class="absolute inset-0 rounded-[30px]" />
               <!-- <div class="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-[30px]" /> -->
             </div>

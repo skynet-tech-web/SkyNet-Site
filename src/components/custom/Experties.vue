@@ -93,7 +93,7 @@ onMounted(() => {
 <style scoped>
 .carousel-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;

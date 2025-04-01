@@ -137,10 +137,10 @@ body {
   transform: translateY(0) !important;
 }
 
-.card:nth-child(1) { background-image: url('src/assets/Ad_2.png');}
-.card:nth-child(2) { background-image: url('src/assets/Ad_1.jpg');}
-.card:nth-child(3) { background-image: url('src/assets/Ad_3.png');}
-.card:nth-child(4) { background-image: url('src/assets/Ad_4.jpg');}
+.card:nth-child(1) { background-image: url('@/assets/Ad_2.png');}
+.card:nth-child(2) { background-image: url('@/assets/Ad_1.jpg');}
+.card:nth-child(3) { background-image: url('@/assets/Ad_3.png');}
+.card:nth-child(4) { background-image: url('@/assets/Ad_4.jpg');}
 
 .Heading{
   color: white;

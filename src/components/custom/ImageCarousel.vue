@@ -2,6 +2,12 @@
 import { ref, onMounted, onBeforeUnmount, watch, computed } from 'vue';
 import { gsap } from 'gsap';
 
+// Import images properly
+import U14 from '@/assets/U_14.png';
+import U6 from '@/assets/U_6.png';
+import U3 from '@/assets/U_3.png';
+import U8 from '@/assets/U_8.png';
+
 interface SlideItem {
   id: number;
   image: string;
@@ -9,33 +15,31 @@ interface SlideItem {
   description: string;
 }
 
-const props = defineProps<{
-  interval?: number;
-}>();
+const props = defineProps<{ interval?: number }>();
 
 // Sample images and text data with high-quality 3D-like images
 const slides = ref<SlideItem[]>([
   {
     id: 1,
-    image: 'src/assets/U_14.png',
+    image: U14, // ✅ Use imported image
     title: 'The Beauty of Virtual Nature',
     description: 'In Unreal Engine, every tree whispers, every river flows, and the world feels alive.'
   },
   {
     id: 2,
-    image: 'src/assets/U_6.png',
+    image: U6,
     title: 'Crafting Digital Landscapes',
     description: 'With light, shadow, and detail, Unreal brings the essence of nature into the digital realm'
   },
   {
     id: 3,
-    image: 'src/assets/U_3.png',
+    image: U3,
     title: 'A World Without Limits',
     description: 'From towering mountains to endless forests, Unreal Engine redefines what’s possible in virtual environments'
   },
   {
     id: 4,
-    image: 'src/assets/U_8.png',
+    image: U8,
     title: 'Exploring the Cosmos',
     description: 'With Unreal Engine, the universe isn’t the limit—it’s just the beginning of a new frontier.'
   }

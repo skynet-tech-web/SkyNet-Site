@@ -60,7 +60,7 @@ const setActiveField = (field) => {
 
 <template>
   <div ref="target"
-    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-6 main-class">
+    class="min-h-screen flex items-center justify-center p-6 main-class">
     <div
       class="max-w-2xl w-full bg-white rounded-3xl p-10 shadow-[0_20px_50px_rgba(8,_112,_184,_0.1)] transform transition-all duration-700"
       :class="[isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0']">
