@@ -208,7 +208,7 @@ h1 {
   }
 
   .carousel-wrapper {
-    height: 90vh;
+    height: 120vh;
     padding-right: 0;
     padding-bottom: 190px;
     display: flex;
@@ -249,6 +249,60 @@ h1 {
   .card-text{
     font-size: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.app-container{
+  padding-left: 0px;
+}
+
+.carousel-wrapper {
+  height: 110vh;
+  padding-right: 0;
+  padding-bottom: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-title{
+  font-size: 2.2rem;
+  padding-left: 0px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0); /* Ensures it is centered */
+}
+
+.card {
+  width: clamp(120px, 18vw, 180px);
+  height: clamp(160px, 25vh, 220px);
+}
+
+.card-text-container{
+  top: 60%;
+  padding: 20px 0px;
+}
+
+.card-text{
+  font-size: 1rem;
+}
 }
 
 
