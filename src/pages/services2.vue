@@ -293,6 +293,7 @@
     color: transparent;
   }
 
+
   @media (max-width: 768px) {
     .top {
       backdrop-filter: 10px;
