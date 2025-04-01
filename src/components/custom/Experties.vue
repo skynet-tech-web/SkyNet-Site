@@ -26,6 +26,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
 import icons from '@/components/custom/icons.vue';
+import blenderImg from '@/assets/blender.png';
 
 const imagesData = [
   { src: 'https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?t=st=1742738893~exp=1742742493~hmac=8af54b47c9f565740ad79d1b645798f7f6cbb3d316d859aad0ad3c16bf7821c2&w=740', text: 'Web Development' },
@@ -36,7 +37,7 @@ const imagesData = [
   { src: 'https://img.freepik.com/free-vector/website-maintenance-abstract-concept-vector-illustration-website-service-webpage-seo-maintenance-web-design-corporate-site-professional-support-security-analysis-update-abstract-metaphor_335657-2295.jpg?t=st=1742738234~exp=1742741834~hmac=a06952a518256c1b9e4070c6744a35d271c4498f574646facc2d05f9422d6945&w=740', text: 'Maintenance' },
   { src: 'https://img.freepik.com/free-vector/pop-ups-concept-illustrated_23-2149121840.jpg?t=st=1742738632~exp=1742742232~hmac=3413fcbe8e04648899fd01f1412787c7392775dde9b3e608164fdb8735d61fed&w=996', text: 'Ad creation' },
   { src: 'https://catnessgames.com/wp-content/uploads/2023/02/unreal-engine-5-requeriments-2.jpg', text: 'Unreal Engine' },
-  { src: 'src/assets/blender.png', text: 'Blender' }
+  { src: blenderImg, text: 'Blender' }  // ✅ Corrected placement
 ];
 
 const images = ref(imagesData.map((item, index) => ({ id: index, ...item })));
