@@ -1,8 +1,7 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 
 const selectedCard = ref(0);
-const isMobile = computed(() => window.innerWidth <= 768);
 
 const cards = ref([
   { title: 'Winter', text: 'Winter has so much to offer - creative activities', image: 'src/assets/U_14.png' },
@@ -18,22 +17,7 @@ const cards = ref([
       <h1 class="main-heading">This Is <span>Ad Creation Page </span></h1>
       <h4 class="second-heading">To showcase our ad creation work</h4>
     </div>
-    <div class="container" v-if="isMobile">
-      <div 
-        class="image-preview" 
-        :style="{ backgroundImage: `url(${cards[selectedCard].image})` }">
-      </div>
-      <div class="thumbnail-container">
-        <div 
-          v-for="(card, index) in cards" 
-          :key="index" 
-          class="thumbnail" 
-          :style="{ backgroundImage: `url(${card.image})` }"
-          @click="selectedCard = index">
-        </div>
-      </div>
-    </div>
-    <div class="container" v-else>
+    <div class="container">
       <label 
         v-for="(card, index) in cards" 
         :key="index" 
@@ -49,9 +33,9 @@ const cards = ref([
         </div>
       </label>
     </div>
+    <h1 class="text">Still in Maintenance</h1>
   </div>
 </template>
-
 
 <style scoped>
 * {
@@ -167,6 +151,13 @@ body {
   font-weight: bold;
   display: flex;
   justify-content: center;
+}
+
+.text{
+  padding-top: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
 }
 
 @media (max-width: 768px) {
