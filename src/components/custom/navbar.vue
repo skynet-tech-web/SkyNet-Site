@@ -5,10 +5,10 @@
     </div>
     
     <ul class="nav-links">
-      <RouterLink to="/" class="nav-item">Home</RouterLink>
-      <RouterLink to="/services" class="nav-item">Web Development</RouterLink>
-      <RouterLink to="/animation" class="nav-item">3D Animations</RouterLink>
-      <RouterLink to="/ad_creation" class="nav-item">Ad Creation</RouterLink>
+      <RouterLink :to="{name: 'index'}" class="nav-item">Home</RouterLink>
+      <RouterLink :to="{name: 'services'}" class="nav-item">Web Development</RouterLink>
+      <RouterLink :to="{name: 'Animation'}" class="nav-item">3D Animations</RouterLink>
+      <RouterLink :to="{name: 'AdCreation'}" class="nav-item">Ad Creation</RouterLink>
       <!-- <RouterLink to="/more" class="nav-item">More</RouterLink> -->
     </ul>
     
@@ -17,10 +17,10 @@
         <Menu class="menu-icon" />
       </button>
       <ul v-if="isOpen" class="mobile-nav">
-        <RouterLink to="/" class="mobile-nav-item">Home</RouterLink>
-        <RouterLink to="/services" class="mobile-nav-item">Web Development</RouterLink>
-        <RouterLink to="/animation" class="mobile-nav-item">3D Animations</RouterLink>
-        <RouterLink to="/ad_creation" class="mobile-nav-item">Ad Creation</RouterLink>
+        <RouterLink :to="{name: 'index'}" class="mobile-nav-item">Home</RouterLink>
+        <RouterLink :to="{name: 'services'}" class="mobile-nav-item">Web Development</RouterLink>
+        <RouterLink :to="{name: 'Animation'}" class="mobile-nav-item">3D Animations</RouterLink>
+        <RouterLink :to="{name: 'AdCreation'}" class="mobile-nav-item">Ad Creation</RouterLink>
         <!-- <RouterLink to="/more" class="mobile-nav-item">More</RouterLink> -->
       </ul>
     </div>

@@ -17,6 +17,10 @@ const handleScroll = () => {
   }
 };
 
+const getImageUrl = (n) => {
+  return new URL(`../../assets/A_${n}.png`, import.meta.url).href;
+};
+
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
@@ -30,7 +34,7 @@ onUnmounted(() => {
   <div class="banner">
     <div class="slider">
       <div v-for="n in 10" :key="n" class="item" :style="`--position: ${n}; --quantity: 10;`">
-        <img :src="`/src/assets/A_${n}.png`" :alt="`Dragon ${n}`" />
+        <img :src="getImageUrl(n)" :alt="`Dragon ${n}`" />
       </div>
     </div>
     <div class="content">
